@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <title>à propos de lauriana</title>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="icon" href="/images/jirachi_pixel.png">
+    <script src="script.js"></script> <!--javascript-->
+    <script src="https://kit.fontawesome.com/732bd9dba7.js" crossorigin="anonymous"></script> <!--fontawesome-->
     
 
 </head>
@@ -13,19 +15,36 @@
     <div id="wrapper">
         <div id="main">
             <div class="inner">
-                <!--start of container + columns-->
+                <!--start of big container-->
                 <div class="container" >
                     
                     <!--bottom bar-->
                     <div id="bottombar">
                         <p id="credits">&copy made by lauriana with <span class="tone">love</span></p>
                     </div>
-                    
+
+                    <!--game sections (appears and disappear)-->
+                    <div id="gamesContainer" class="wrapper">
+                        <div class="inner" id="games">
+                                <div class="game">
+                                    <h3>devinette</h3>
+                                    <p>testing the text values</p>
+                                </div>
+                                <div class="game">
+                                    <h3>générateur de mot de passe</h3>
+                                    <p>once again, testing the text values.</p>
+                                </div>
+                                <div class="game">
+                                    <h3>quiz</h3>
+                                    <p>testing the text values. i wonder what it'll do this time.</p>
+                                </div>
+                        </div>
+                    </div>
                     
                     <div class="wrapper">
                     
                         <!--start of container elements-->
-                        <div class="inner">
+                        <div class="inner" id="home">
                             
                             <!--left side-->
                             <div id="column1">
@@ -67,8 +86,9 @@
                         <ul>
                             <li><a href="#">accueil</a></li>
                             <li><a href="#">about <span class="tone-nav">lauriana</span></a></li>
-                            <li><a href="#">about <span class="tone-nav"></span></a></li>
-                            <li><a href="#">jeux</a></li>
+                            <li><a href="#">about <span class="tone-nav">marc-antoine</span></a></li>
+                            <li><a onclick="showGames();return;false;">jeux</a></li>
+                            <li><a href="https://github.com/laurriana" target="_blank"><i class="fa-brands fa-github"></i></a></li>
                         </ul>
                     </nav>
                     <div class="bigText">

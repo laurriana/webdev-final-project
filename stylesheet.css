@@ -29,7 +29,7 @@
 }
 
 body {
-    background-color: rgba(211, 211, 211, 0.103);
+    background-color: #f9f9f9;
     color: black;
 }
 
@@ -54,7 +54,7 @@ img {
     animation: fadein 1s ease-in-out;
 }
 
-.container > .wrapper {
+.wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -62,6 +62,7 @@ img {
     box-shadow: 0rem 0rem 0.875rem 0rem rgba(81, 117, 143, 0.4);
     border-radius: 0.75rem;
     box-sizing: border-box;
+    justify-content: space-between;
 }
 
 
@@ -69,8 +70,10 @@ img {
     margin: 1.8em 3em 1.8em 3em;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
-    gap: 3em;
+}
+
+#home {
+    gap: 2em;
 }
 
 #column1 {
@@ -86,6 +89,11 @@ img {
     font-weight: bold;
     line-height: 1.5rem;
     text-decoration: underline;
+}
+
+#column1 img {
+    width: 12em;
+    height: auto;
 }
 
 /* text */
@@ -148,18 +156,23 @@ nav a:hover {
     margin-top: 1.5em;
 }
 
+#bottombar > p {
+    color: #00000066;
+    transition: all 0.3s ease-in-out;
+}
+
+#bottombar > p:hover {
+    color: black;
+}
+
 .tone {
     font-weight: bold;
-    color: rgb(225, 209, 146);
+    color: #e1d19266;
     transition: all 0.3s ease-in-out;
 }
 
 .tone:hover {
     color: rgb(146, 206, 225);
-}
-
-#bottombar .tone:hover::after {
-    content: " ♥️";
 }
 
 .image {
@@ -194,6 +207,48 @@ nav a:hover {
     to {
         opacity: 1;
     }
+}
+
+/* game section */
+#gamesContainer {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden; 
+    max-height: 0;
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out, max-height 1.2s ease-in-out;
+}
+
+.innerGame {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#games {
+    gap: 1.25em;
+}
+
+.game {
+    text-align: center;
+    max-width: 11em;
+}
+
+.game > h3 {
+    font-size: .9em;
+    font-weight: bold;
+    color: rgb(197, 202, 100);
+    transition: all 0.26s ease-in-out;
+    text-decoration: underline;
+    white-space: nowrap; 
+}
+
+.game > p {
+    white-space: normal; 
 }
 
 /* mobile optimization */
