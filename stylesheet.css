@@ -1,0 +1,192 @@
+/* roots */
+
+    /* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap');
+
+/* scrollbar */
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 8px;
+}
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #dbdbdb;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Archivo', sans-serif;
+    cursor: url(https://cur.cursors-4u.net/games/gam-2/gam173.cur), auto !important;
+}
+
+*::selection {
+    background-color: rgba(182, 212, 226, 0.774);
+    color: black;
+}
+
+body {
+    background-color: rgba(211, 211, 211, 0.103);
+    color: black;
+}
+
+h1 {
+    margin: 50px 0 0;
+    font-size: 36px;
+}
+
+img {
+    width: 10em;
+}
+
+/* container, inner */
+.container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    animation: fadein 1s ease-in-out;
+}
+
+.container > .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0rem 0rem 0.875rem 0rem rgba(81,117,143,0.4);
+    border-radius: 0.75rem;
+    width: 28em;
+    box-sizing: border-box;
+}
+
+.container.columns > .wrapper > .inner {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+}
+
+.container > .wrapper > .inner {
+    margin: 2em;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+/* text */
+.inner p {
+    font-size: 0.80em;
+    line-height: 1em;
+}
+
+.container > div li {
+    font-size: 0.80em;
+    line-height: 1em;
+    margin-left: .5em;
+    list-style-type: circle;
+}
+
+.container div li::marker {
+    content: "⋆ ";
+}
+
+.highlighted {
+    background-color: rgb(207, 235, 239);
+}
+
+/* navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: white;
+    box-shadow: 0rem 0rem 0.875rem 0rem rgba(81,117,143,0.4);
+    border-radius: 0.75rem;
+    position: relative;
+    margin-bottom: 1.5em;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 0.8em;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.85em;
+    font-weight: bold;
+    transition: all 0.26s ease-in-out;
+}
+
+nav a:hover {
+    color: rgb(203, 194, 98);
+    font-size: 0.95em;
+}
+
+/* bottom bar */
+#bottombar {
+    margin-top: 1.5em;
+}
+
+.tone {
+    font-weight: bold;
+    color: rgb(225, 209, 146);
+    transition: all 0.3s ease-in-out;
+}
+
+.tone:hover {
+    color: rgb(146, 206, 225);
+}
+
+#bottombar .tone:hover::after {
+    content: " ♥️";
+}
+
+
+.image {
+    margin-bottom: 0.5em;
+}
+
+.bigText {
+    margin-bottom: 2em;
+}
+
+.bigText h1 {
+    margin: 0;
+    font-size: 1.3em;
+    font-family: monospace;
+    display: inline-block;
+    text-align: center;
+
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.bigText .minih1 {
+    font-size: 0.9em;
+    font-family: monospace;
+    display: inline-block;
+
+    white-space: nowrap;
+}
+
+@keyframes fadein {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
