@@ -1,4 +1,4 @@
-/* roots */
+
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap');
 
 /* scrollbar */
@@ -40,6 +40,16 @@ h1 {
 
 img {
     width: 10em;
+}
+
+code {
+    font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace;
+    line-height: 2.2em;
+    background: rgba(135,131,120,.15);
+    color: #EB5757;
+    border-radius: 5px;
+    font-size: 0.8em;
+    padding: 0.25em 0.4em;
 }
 
 /* container, inner */
@@ -154,25 +164,27 @@ nav a:hover {
 /* bottom bar */
 #bottombar {
     margin-top: 1.5em;
+    max-width: 12em;
+    text-align: center;
 }
 
 #bottombar > p {
-    color: #00000066;
+    opacity: 0.3;
     transition: all 0.3s ease-in-out;
 }
 
 #bottombar > p:hover {
-    color: black;
+    opacity: 1;
 }
 
 .tone {
     font-weight: bold;
-    color: #e1d19266;
+    color: #e1d192;
     transition: all 0.3s ease-in-out;
 }
 
 .tone:hover {
-    color: rgb(146, 206, 225);
+    color: rgb(255, 112, 141);
 }
 
 .image {
@@ -245,11 +257,27 @@ nav a:hover {
     transition: all 0.26s ease-in-out;
     text-decoration: underline;
     white-space: nowrap; 
+    margin-bottom: 0.35em;
+}
+
+.game > h3:hover {
+    color: #7cc6e3;
+    text-shadow: #a0ebff 0px 0px 10px;
 }
 
 .game > p {
-    white-space: normal; 
+    white-space: normal;
+    text-transform: lowercase;
+    text-align: justify;
+    padding: 0.5em;
+    border-radius: 0.75em; 
+    transition: background-color 0.26s ease-in-out;
 }
+
+.game > p:hover {
+    background-color: rgba(0, 96, 123, 0.04);
+}
+
 
 /* mobile optimization */
 @media only screen and (max-width: 600px) {

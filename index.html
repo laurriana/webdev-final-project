@@ -8,19 +8,21 @@
     <link rel="icon" href="/images/jirachi_pixel.png">
     <script src="script.js"></script> <!--javascript-->
     <script src="https://kit.fontawesome.com/732bd9dba7.js" crossorigin="anonymous"></script> <!--fontawesome-->
+    <audio id="audio" src="/images/instru.mp3"></audio> <!--audio-->
     
 
 </head>
 <body>
+    
     <div id="wrapper">
         <div id="main">
             <div class="inner">
                 <!--start of big container-->
                 <div class="container" >
-                    
                     <!--bottom bar-->
                     <div id="bottombar">
-                        <p id="credits">&copy made by lauriana with <span class="tone">love</span></p>
+                        <p id="credits">&copy made by lauriana with <span class="tone">love</span>
+                        <br>to control the music, click jirachi.</p>
                     </div>
 
                     <!--game sections (appears and disappear)-->
@@ -28,31 +30,31 @@
                         <div class="inner" id="games">
                                 <div class="game">
                                     <h3>devinette</h3>
-                                    <p>testing the text values</p>
+                                    <p>Jeu de devinette interactif sans <code>alert</code>, <code>prompt</code> ni <code>console.log</code> portant sur les différentes notions vues dans le cours de création de site web.</p>
                                 </div>
                                 <div class="game">
                                     <h3>générateur de mot de passe</h3>
-                                    <p>once again, testing the text values.</p>
+                                    <p>mini application pour créer des mots de passe de 8 à 20 caractères avec des options personnalisées. l'utilisateur a le choix d'inclure des lettres majuscules (ou minuscules), des nombres et des caractères spéciaux.</p>
                                 </div>
                                 <div class="game">
                                     <h3>quiz</h3>
-                                    <p>testing the text values. i wonder what it'll do this time.</p>
+                                    <p>Jeu-questionnaire interactif avec questions dynamiques. L'utilisateur choisit une réponse par question, la page se met à jour sans rechargement. Le score final est affiché avec un message sur la perfomance.</p>
                                 </div>
                         </div>
                     </div>
-                    
+
                     <div class="wrapper">
-                    
+
                         <!--start of container elements-->
                         <div class="inner" id="home">
-                            
                             <!--left side-->
                             <div id="column1">
                                 <div id="image01" class="image">
-                                    <img src="images/jirachi.gif">
+                                    <img src="images/jirachi.gif" onclick="playMusic()" title="click me!">
                                 </div>
                                 <div id="text02">
-                                    <p><strong>rétrospection</strong> dans ce cours, j'ai pu apprendre sur la création de site web et faciliter le processus à l'aide de plusieurs outils, comme <span class="highlighted">devtools</span>, par exemple.</p>
+                                    <p><strong>rétrospection</strong> dans ce cours, j'ai appris comment créer un site web de zéro et faciliter le processus à l'aide de plusieurs outils, comme <span class="highlighted">devtools</span>, par exemple.</p>
+                                    
                                 </div>
                             </div>
 
@@ -64,16 +66,16 @@
                                     </span>
                                 </div>
                                 <p id="text01">
-                                    lauriana ⋅ she/elle 17 ans<br>
-                                    <span class="p">cégep marie-victorin</span><br>
+                                    &#x1F4DA;	techniques de l'informatique<br>
+                                    &#x1F3EB;	cégep marie-victorin
+                                        <br>
                                         <br>
                                         <strong>langues apprises</strong>
                                         <ul>
                                             <li>CSS</li>
                                             <li>HTML</li>
                                             <li>Javascript</li>
-                                        </ul>
-                                    </span>
+                                        </ul>    
                                 </p>
                             </div>
                             <!--end of container elements-->
@@ -84,10 +86,10 @@
                 </div> 
                     <nav id="navbar">
                         <ul>
-                            <li><a href="#">accueil</a></li>
-                            <li><a href="#">about <span class="tone-nav">lauriana</span></a></li>
+                            <li><a href="#accueil">accueil</a></li>
+                            <li><a href="index.html" target="_self">about <span class="tone-nav">lauriana</span></a></li>
                             <li><a href="#">about <span class="tone-nav">marc-antoine</span></a></li>
-                            <li><a onclick="showGames();return;false;">jeux</a></li>
+                            <li><a onclick="showGames();return;false">jeux</a></li>
                             <li><a href="https://github.com/laurriana" target="_blank"><i class="fa-brands fa-github"></i></a></li>
                         </ul>
                     </nav>
