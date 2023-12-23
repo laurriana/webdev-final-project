@@ -233,7 +233,6 @@ nav a:hover {
     max-height: 0;
     transition: opacity 1s ease-in-out, visibility 1s ease-in-out, max-height 1.2s ease-in-out;
 
-    width: 100%; 
     height: auto;
     overflow: visible; 
 }
@@ -291,16 +290,28 @@ nav a:hover {
 /* mobile optimization */
 @media only screen and (max-width: 600px) {
 
+    body {
+        scale: 0.82;
+
+    }
+
     .container .wrapper .inner  {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-auto-flow: dense;
         justify-items: center;
     }
 
 .container .wrapper .inner :nth-child(3) {
     grid-column: 1 / span 2;
+    
+    }
 
+    .game {
+        max-width: 100%;
+    }
+
+    .game p {
+        text-align: justify;
     }
 
 }
