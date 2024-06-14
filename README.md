@@ -14,3 +14,5 @@ while it was definitely difficult to start, i learned a lot from this project.
 3. **it's important to properly wrap HTML elements** and label them. the idents certainly made it easier to know where and what i was modifying, but i don't think anything helps more than comments and tags.
 
 in total, this page took me about **12 hours**. i will not procrastinate anything ever again.
+
+## final grade: 104%
