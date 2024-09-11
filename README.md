@@ -11,7 +11,7 @@ since i made the carrd, i had a broad idea of what i _really_ wanted it to look 
 while it was definitely difficult to start, i learned a lot from this project.
 1. **css isn’t as scary as i thought.** having more creative liberty eased the learning process and the overall experience.
 2. **css is extremely versatile.**
-3. **it's important to properly wrap HTML elements** and label them. the idents certainly made it easier to know where and what i was modifying, but i don't think anything helps more than comments and tags.
+3. **it's important to properly wrap HTML elements** and label them. the indents certainly made it easier to know where and what i was modifying, but i don't think anything helps more than comments and tags.
 
 in total, this page took me about **12 hours**. i will not procrastinate anything ever again.
 
